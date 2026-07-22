@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>AUTHORIZED SECURITY TEST — Subdomain Takeover PoC</title>
+  <style>
+    body { font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+           background:#0d1117; color:#e6edf3; margin:0; }
+    .wrap { max-width:760px; margin:8vh auto; padding:0 24px; }
+    .badge { display:inline-block; background:#7d1a1a; color:#fff; font-weight:700;
+             padding:6px 14px; border-radius:6px; font-size:13px; }
+    h1 { font-size:28px; margin:18px 0 8px; }
+    code { background:#161b22; padding:2px 6px; border-radius:4px; }
+    .card { background:#161b22; border:1px solid #30363d; border-radius:10px;
+            padding:20px 24px; margin-top:22px; line-height:1.6; }
+    .muted { color:#8b949e; font-size:14px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <span class="badge">AUTHORIZED SECURITY TEST</span>
+    <h1>Subdomain Takeover — Proof of Concept</h1>
+    <div class="card">
+      <p>This page is served on <code>srikanth.shinigami.in</code> from a GitHub Pages
+      repository that is <strong>not</strong> the intended owner's, proving the
+      subdomain's dangling <code>CNAME</code> allowed takeover.</p>
+      <p class="muted"><strong>Benign authorized test. No data collected.</strong>
+      Remediate by removing the dangling DNS record or verifying the domain in GitHub,
+      then delete this repo.</p>
+      <p class="muted">Contact: sinsila.ramesh@slicebank.com · SLICE-ASM PoC</p>
+    </div>
+  </div>
+</body>
+</html>
